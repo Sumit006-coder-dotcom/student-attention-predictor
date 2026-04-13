@@ -1,113 +1,130 @@
-# student-attention-predictor
-An end-to-end Machine Learning project that predicts student attention level using multiple models, SHAP explainability, and data visualization. Built with Streamlit.
+🎓 Student Attention Predictor
+An end-to-end Machine Learning project that predicts student attention levels using multiple models, explainable AI (SHAP), and interactive data visualization — deployed with Streamlit.
 
-## 🚀 Features
+🚀 Overview
+This project builds a complete ML pipeline from data preprocessing to deployment, enabling real-time prediction of student attention levels. It also integrates Explainable AI (XAI) techniques to interpret model decisions.
 
-- 🔮 Real-time Prediction using user input
-- 📊 Model Comparison (Logistic Regression, Random Forest, XGBoost)
-- 🏆 Best Model Selection based on accuracy
-- 📈 Evaluation Metrics:
-  - Accuracy
-  - Confusion Matrix
-  - ROC Curve (Multiclass)
-- 📊 Data Visualization:
-  - Score distribution
-  - Boxplots
-  - Correlation heatmap
-- 🔍 Explainable AI:
-  - SHAP (model interpretability)
-  - Feature Importance
-- 🌐 Streamlit Web App UI
+✨ Key Features
+🔮 Real-Time Prediction via user input (Streamlit UI)
+🤖 Multiple ML Models
+Logistic Regression
+Random Forest
+XGBoost
 
----
+🏆 Automatic Best Model Selection
+📊 Model Evaluation Metrics
+Accuracy Score
+Confusion Matrix
+ROC Curve (Multiclass)
+📈 Data Visualization
+Score Distribution
+Boxplots
+Correlation Heatmap
 
-## 🧠 Machine Learning Workflow
-
-1. Data Preprocessing  
-2. Feature Engineering  
-3. Model Training  
-4. Model Comparison  
-5. Evaluation (ROC, Confusion Matrix)  
-6. Model Selection  
-7. Explainability (SHAP, Feature Importance)  
-8. Deployment using Streamlit  
-
----
-
-## 📂 Project Structure
-student-performance-app/
+🧠 Explainable AI
+SHAP values for interpretability
+Feature importance analysis
+🌐 Interactive Web App (Streamlit)
+🧠 Machine Learning Workflow
+Plain text
+1. Data Preprocessing
+2. Feature Engineering
+3. Model Training
+4. Model Comparison
+5. Evaluation (Accuracy, ROC, Confusion Matrix)
+6. Best Model Selection
+7. Explainability (SHAP)
+8. Deployment (Streamlit)
+📂 Project Structure
+Bash
+student-attention-predictor/
 │
-├── app.py
+├── app.py                         # Streamlit app
 ├── data/
-│ └── StudentsPerformance.csv
+│   └── StudentsPerformance.csv   # Dataset
 │
 ├── model/
-│ ├── train.py
-│ ├── predict.py
-│ ├── explain.py
-│ ├── model.pkl
-│ ├── encoder.pkl
-│ ├── metrics.txt
-│ ├── model_results.txt
-│ ├── best_model.txt
-│ ├── confusion_matrix.png
-│ ├── roc_curve.png
+│   ├── train.py                  # Model training
+│   ├── predict.py                # Prediction logic
+│   ├── explain.py                # SHAP explainability
+│   ├── model.pkl                 # Saved model
+│   ├── encoder.pkl               # Encoders
+│   ├── metrics.txt               # Evaluation metrics
+│   ├── model_results.txt         # Model comparison
+│   ├── best_model.txt            # Selected best model
+│   ├── confusion_matrix.png
+│   ├── roc_curve.png
 │
 ├── utils/
-│ └── preprocess.py
+│   └── preprocess.py             # Data preprocessing
 │
 ├── requirements.txt
 └── README.md
 
-
----
-
-## ⚙️ Installation
-
-```bash
+⚙️ Installation & Setup
+1️⃣ Clone Repository
+Bash
 git clone https://github.com/your-username/student-attention-predictor.git
 cd student-attention-predictor
+2️⃣ Install Dependencies
+Bash
 pip install -r requirements.txt
 ▶️ Run the Project
-1️⃣ Train Model
+🔹 Train the Model
+Bash
 python model/train.py
-2️⃣ Run Streamlit App
+🔹 Launch Streamlit App
+Bash
 streamlit run app.py
+
 📊 Model Performance
-Logistic Regression: ~97%
-Random Forest: ~96%
-XGBoost: ~96%
+Model
+Accuracy
+Logistic Regression
+~97% ✅
+Random Forest
+~96%
+XGBoost
+~96%
+🏆 Best Model: Logistic Regression
 
-✅ Best Model selected LogisticRegression
-
-📸 Screenshots
+📸 Application Highlights
 🔮 Prediction
-Real-time student attention prediction
+Real-time student attention prediction based on user input
+
 📊 Model Evaluation
-Confusion Matrix
-ROC Curve
-📈 Visualization
-Score vs Attention analysis
-🧠 Explainability
-SHAP used to explain model predictions
-Feature Importance graph shows key influencing features
+Confusion Matrix visualization
+ROC Curve for multiclass classification
+
+📈 Data Analysis
+Score vs Attention insights
+Distribution & correlation analysis
+
+🧠 Explainable AI
+SHAP visualization for feature impact
+Feature importance ranking
+
 💡 Key Learnings
 End-to-end ML pipeline development
-Model comparison and evaluation
+Model comparison & performance evaluation
 Handling categorical + numerical data
 Explainable AI (SHAP)
 Deployment using Streamlit
-⚠️ Note
-High accuracy due to relatively small dataset
-In real-world scenarios, performance may vary
+
+⚠️ Limitations
+High accuracy due to small dataset
+Performance may vary in real-world scenarios
+
 🚀 Future Improvements
-Deploy on cloud (Streamlit Cloud / AWS)
-Add database integration
-Improve UI/UX
-Add more real-world features
+🗄️ Add database integration
+🎨 Improve UI/UX design
+📊 Use larger & real-world datasets
+⚡ Optimize model performance
+
 👨‍💻 Author
-
 Sumit Kumar Karn
-
 🎓 BCA (Hons. with Research)
-💡 Interested in AI, ML & Data Science
+💡 Passionate about AI, ML & Data Science
+📧 Email: sumitkarn2005@gmail.com
+🔗 GitHub: https://github.com/Sumit006-coder-dotcom⁠�
+🔗 LinkedIn: https://www.linkedin.com/in/sumit-karn-86606524a/⁠�
